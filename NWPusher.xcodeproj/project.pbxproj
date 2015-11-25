@@ -48,6 +48,14 @@
 		B3F232B7189682D30043DA98 /* NWSecTools.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F232A9189682D30043DA98 /* NWSecTools.m */; };
 		B3F232B8189682D30043DA98 /* NWSSLConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F232AB189682D30043DA98 /* NWSSLConnection.m */; };
 		B3F232B9189682D30043DA98 /* NWSSLConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F232AB189682D30043DA98 /* NWSSLConnection.m */; };
+		C1DAE31D1C0600DF007C9B98 /* NWPusherFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = C1DAE31C1C0600DF007C9B98 /* NWPusherFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C1DAE3221C06012A007C9B98 /* NWHub.h in Headers */ = {isa = PBXBuildFile; fileRef = B3F232A0189682D30043DA98 /* NWHub.h */; };
+		C1DAE3231C06012A007C9B98 /* NWNotification.h in Headers */ = {isa = PBXBuildFile; fileRef = B3F232A2189682D30043DA98 /* NWNotification.h */; };
+		C1DAE3241C06012A007C9B98 /* NWPusher.h in Headers */ = {isa = PBXBuildFile; fileRef = B3F232A4189682D30043DA98 /* NWPusher.h */; };
+		C1DAE3251C06012A007C9B98 /* NWPushFeedback.h in Headers */ = {isa = PBXBuildFile; fileRef = B3F232A6189682D30043DA98 /* NWPushFeedback.h */; };
+		C1DAE3261C06012A007C9B98 /* NWSecTools.h in Headers */ = {isa = PBXBuildFile; fileRef = B3F232A8189682D30043DA98 /* NWSecTools.h */; };
+		C1DAE3271C06012A007C9B98 /* NWSSLConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = B3F232AA189682D30043DA98 /* NWSSLConnection.h */; };
+		C1DAE3281C06012A007C9B98 /* NWType.h in Headers */ = {isa = PBXBuildFile; fileRef = B34BF1B218DDF401004BA9F7 /* NWType.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -103,6 +111,9 @@
 		B3F232A9189682D30043DA98 /* NWSecTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NWSecTools.m; sourceTree = "<group>"; };
 		B3F232AA189682D30043DA98 /* NWSSLConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NWSSLConnection.h; sourceTree = "<group>"; };
 		B3F232AB189682D30043DA98 /* NWSSLConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NWSSLConnection.m; sourceTree = "<group>"; };
+		C1DAE31A1C0600DF007C9B98 /* NWPusherFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NWPusherFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1DAE31C1C0600DF007C9B98 /* NWPusherFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NWPusherFramework.h; sourceTree = "<group>"; };
+		C1DAE31E1C0600DF007C9B98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +134,13 @@
 			files = (
 				B3C6BDD315FD27E900F1F3F1 /* Security.framework in Frameworks */,
 				B3C6BD8015FD24D200F1F3F1 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1DAE3161C0600DF007C9B98 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,6 +211,7 @@
 				B3F2329D189682D30043DA98 /* Classes */,
 				B33FB1BA172B185C006529CE /* Mac */,
 				B33FB1ED172B1A7A006529CE /* Touch */,
+				C1DAE31B1C0600DF007C9B98 /* NWPusherFramework */,
 				B3C6BD7E15FD24D200F1F3F1 /* Frameworks */,
 				B3C6BD7C15FD24D200F1F3F1 /* Products */,
 			);
@@ -203,6 +222,7 @@
 			children = (
 				B3C6BD7B15FD24D200F1F3F1 /* Pusher.app */,
 				B33FB1D1172B1A66006529CE /* PusherTouch.app */,
+				C1DAE31A1C0600DF007C9B98 /* NWPusherFramework.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -243,7 +263,34 @@
 			path = Classes;
 			sourceTree = "<group>";
 		};
+		C1DAE31B1C0600DF007C9B98 /* NWPusherFramework */ = {
+			isa = PBXGroup;
+			children = (
+				C1DAE31C1C0600DF007C9B98 /* NWPusherFramework.h */,
+				C1DAE31E1C0600DF007C9B98 /* Info.plist */,
+			);
+			path = NWPusherFramework;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C1DAE3171C0600DF007C9B98 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1DAE31D1C0600DF007C9B98 /* NWPusherFramework.h in Headers */,
+				C1DAE3221C06012A007C9B98 /* NWHub.h in Headers */,
+				C1DAE3231C06012A007C9B98 /* NWNotification.h in Headers */,
+				C1DAE3241C06012A007C9B98 /* NWPusher.h in Headers */,
+				C1DAE3251C06012A007C9B98 /* NWPushFeedback.h in Headers */,
+				C1DAE3261C06012A007C9B98 /* NWSecTools.h in Headers */,
+				C1DAE3271C06012A007C9B98 /* NWSSLConnection.h in Headers */,
+				C1DAE3281C06012A007C9B98 /* NWType.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		B33FB1D0172B1A66006529CE /* PusherTouch */ = {
@@ -280,6 +327,24 @@
 			productReference = B3C6BD7B15FD24D200F1F3F1 /* Pusher.app */;
 			productType = "com.apple.product-type.application";
 		};
+		C1DAE3191C0600DF007C9B98 /* NWPusherFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1DAE3211C0600DF007C9B98 /* Build configuration list for PBXNativeTarget "NWPusherFramework" */;
+			buildPhases = (
+				C1DAE3151C0600DF007C9B98 /* Sources */,
+				C1DAE3161C0600DF007C9B98 /* Frameworks */,
+				C1DAE3171C0600DF007C9B98 /* Headers */,
+				C1DAE3181C0600DF007C9B98 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NWPusherFramework;
+			productName = NWPusherFramework;
+			productReference = C1DAE31A1C0600DF007C9B98 /* NWPusherFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -287,8 +352,13 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = NW;
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = noodlewerk;
+				TargetAttributes = {
+					C1DAE3191C0600DF007C9B98 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+				};
 			};
 			buildConfigurationList = B3C6BD7515FD24D200F1F3F1 /* Build configuration list for PBXProject "NWPusher" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -304,6 +374,7 @@
 			targets = (
 				B3C6BD7A15FD24D200F1F3F1 /* PusherMac */,
 				B33FB1D0172B1A66006529CE /* PusherTouch */,
+				C1DAE3191C0600DF007C9B98 /* NWPusherFramework */,
 			);
 		};
 /* End PBXProject section */
@@ -335,6 +406,13 @@
 				B3005FC318F43659009BB7C3 /* Application.xib in Resources */,
 				B3B4DCD318A7998300F9F258 /* LICENSE.txt in Resources */,
 				B3AFABEF172C81910027346A /* config.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1DAE3181C0600DF007C9B98 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,6 +453,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C1DAE3151C0600DF007C9B98 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
@@ -399,6 +484,7 @@
 				);
 				INFOPLIST_FILE = "Touch/PusherTouch-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.noodlewerk.pusher;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -425,6 +511,7 @@
 				INFOPLIST_FILE = "Touch/PusherTouch-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PRODUCT_BUNDLE_IDENTIFIER = com.noodlewerk.pusher;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -441,6 +528,7 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -492,6 +580,7 @@
 				);
 				INFOPLIST_FILE = "Mac/PusherMac-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.noodlewerk.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Pusher;
 				WRAPPER_EXTENSION = app;
 			};
@@ -509,8 +598,93 @@
 				);
 				INFOPLIST_FILE = "Mac/PusherMac-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.noodlewerk.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Pusher;
 				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C1DAE31F1C0600DF007C9B98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = NWPusherFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = io.quetzal.NWPusherFramework;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C1DAE3201C0600DF007C9B98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = NWPusherFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = io.quetzal.NWPusherFramework;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -543,6 +717,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		C1DAE3211C0600DF007C9B98 /* Build configuration list for PBXNativeTarget "NWPusherFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1DAE31F1C0600DF007C9B98 /* Debug */,
+				C1DAE3201C0600DF007C9B98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

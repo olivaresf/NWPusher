@@ -1,0 +1,6 @@
+framework module NWPusherFramework {
+  umbrella header "NWPusherFramework.h"
+
+  export *
+  module * { export * }
+}
